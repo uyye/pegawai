@@ -19,6 +19,8 @@ module.exports = (sequelize, DataTypes) => {
   }
   jumlahMasukKerja.init({
     nip: DataTypes.INTEGER,
+    tanggalMasuk: DataTypes.DATE,
+    tanggalKeluar: DataTypes.DATE,
     jumlahHari: DataTypes.INTEGER,
     periodeBulan: DataTypes.INTEGER
   }, {

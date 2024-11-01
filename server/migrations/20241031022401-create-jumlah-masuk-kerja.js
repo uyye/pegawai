@@ -19,6 +19,12 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE', 
       },
+      tanggalMasuk:{
+        type:Sequelize.DATE
+      },
+      tanggalKeluar:{
+        type:Sequelize.DATE
+      },
       jumlahHari: {
         type: Sequelize.INTEGER
       },
