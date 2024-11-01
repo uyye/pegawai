@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Swal from "sweetalert2"
 import Footer from './components/Footer';
+import formatDate from './helpers/formatDate';
 
 
 function App() {
@@ -160,7 +161,7 @@ function App() {
                   <td>{x.nip}</td>
                   <td>{x.namaPegawai}</td>
                   <td>{x.tempatLahir}</td>
-                  <td>{x.tanggalLahir}</td>
+                  <td>{formatDate(x.tanggalLahir)}</td>
                   <td>{x.golongan}</td>
                   <td>
                     <img
